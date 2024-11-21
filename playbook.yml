@@ -2,6 +2,7 @@
 - name: install nginx
   hosts: all
   become: yes
+  become_user: jenkins
   roles:
     - nginx
 
