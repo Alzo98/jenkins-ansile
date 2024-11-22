@@ -1,6 +1,7 @@
 - name: install nginx
   hosts: all
   become: yes
+  become_user: vagrant
   roles:
     - nginx
 
